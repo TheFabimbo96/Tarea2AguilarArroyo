@@ -1,0 +1,25 @@
+import calculadora
+
+
+def test_prueba_operador():
+    a = 10
+    b = 8
+    variable = calculadora.main_func(a, b)
+    assert variable == (18, 2, 80)
+    print('Resultados: S/R/M', variable)
+
+
+def test_prueba_menor():
+    a = 8
+    b = 10
+    variable1 = calculadora.main_func(a, b)
+    assert variable1 == -857
+    print('ERROR: A < B')
+
+
+def test_prueba_letra():
+    a = "hola mundo"
+    b = 10
+    variable2 = calculadora.main_func(a, b)
+    assert variable2 == -1
+    print('ERROR: Valor literal introducido')

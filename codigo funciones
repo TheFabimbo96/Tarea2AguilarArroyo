@@ -1,0 +1,23 @@
+def op_suma(a, b):
+    return a + b
+
+
+def op_resta(a, b):
+    return a - b
+
+
+def op_prod(a, b):
+    return a * b
+
+
+def main_func(a, b):
+    try:
+        a = float(a)
+        b = float(b)
+        if(a > b):
+            return op_suma(a, b), op_resta(a, b), op_prod(a, b)
+        else:
+            return -857
+
+    except ValueError:
+        return -1

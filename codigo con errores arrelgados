@@ -1,0 +1,8 @@
+
+def area_cuadrado(a, b):
+    area = a * b
+    print("El área del cuadrado es ", area)
+    return area
+
+
+area_cuadrado(2, 5)

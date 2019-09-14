@@ -1,0 +1,9 @@
+# Ejercicio #6
+#Mostrando errores con flake8
+
+def area_cuadrado( a,b):                            #Se define la función
+        area=a*b
+        print ("El área del cuadrado es ", area)
+        return area
+
+area_cuadrado(2,5)
